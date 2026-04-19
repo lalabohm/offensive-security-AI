@@ -18,3 +18,13 @@ Para rodar este notebook localmente, você precisará do Python 3.8 ou superior 
 ```bash
 pip install tensorflow adversarial-robustness-toolbox matplotlib numpy jupyter
 ```
+
+## O que esperar dos resultados
+
+O notebook treinará rapidamente um modelo convolucional simples no dataset MNIST (dígitos escritos à mão). Em seguida, ele aplicará o ataque FGSM.
+
+Na última célula, você verá um gráfico comparativo:
+
+- Linha Superior: Imagens limpas e a classificação correta da IA.
+
+- Linha Inferior: Imagens com o ruído adversário aplicado. Você notará que para o olho humano o número continua legível, mas a IA (indicada em texto vermelho) classifica o número incorretamente.
